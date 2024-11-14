@@ -7,15 +7,16 @@
     <script src="script.js" defer></script>
     <title>Library</title>
   </head>
-  <body>
+ 
     <div class="container">
-      <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
+      <h2>Books Listed</h2>
       <ul class="responsive-table">
         <li class="table-header">
-          <div class="col col-1">Job Id</div>
-          <div class="col col-2">Customer Name</div>
-          <div class="col col-3">Amount Due</div>
-          <div class="col col-4">Payment Status</div>
+          <div class="col col-1">Book Id</div>
+          <div class="col col-2">Title</div>
+          <div class="col col-3">Author</div>
+          <div class="col col-4">Pages</div>
+          <div class="col col-5">Read</div>
         </li>
 
         <!-- <li class="table-row">
@@ -43,6 +44,31 @@
           <div class="col col-4" data-label="Payment Status">Pending</div>
         </li> -->
       </ul>
+      <button class="button" role="button">Add Book</button>
     </div>
+
+    <!-- Modal -->
+  
+    <div class="modal">
+      <div class="cookiesContent" id="cookiesPopup">
+          <button class="close">✖</button>
+          <form class="book-form" action="">
+            <label for="bookId">Title:</label>
+            <input type="text" name="title" id="title" />
+            <br />
+            <label for="bookId">Author:</label>
+            <input type="text" name="author" id="author" />
+            <br />
+            <label for="bookId">Pages:</label>
+            <input type="text" name="pages" id="pages" />
+            <br />
+            <label for="bookId">Read:</label>
+            <input type="text" name="read" id="read" />
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+  
   </body>
 </html>
