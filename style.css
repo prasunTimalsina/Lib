@@ -134,13 +134,14 @@ h2 {
   align-items: center;
   width: 100%;
   height: 100vh;
-  /*  display: none; */
+  display: none;
 }
 .cookiesContent {
   width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -155,4 +156,13 @@ h2 {
     border: none;
     margin-bottom: 10px;
   }
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  cursor: pointer;
 }
