@@ -1,6 +1,17 @@
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body {
   font-family: "lato", sans-serif;
-  background: #867f7f;
 }
 .container {
   max-width: 1000px;
@@ -83,18 +94,32 @@ h2 {
     flex-basis: 10%;
   }
   .col-2 {
-    flex-basis: 22.5%;
+    flex-basis: 18%;
   }
   .col-3 {
-    flex-basis: 22.5%;
+    flex-basis: 18%;
   }
   .col-4 {
-    flex-basis: 22.5%;
+    flex-basis: 18%;
   }
 
   .col-5 {
-    flex-basis: 22.5%;
+    flex-basis: 18%;
   }
+
+  .col-5 {
+    flex-basis: 18%;
+  }
+
+  .delete-icon {
+    height: 20px;
+    cursor: pointer;
+  }
+
+  /*   .delete-icon:hover {
+    animation: float 1s ease-in-out;
+    fill: #797474;
+  } */
 
   @media all and (max-width: 767px) {
     .table-header {
